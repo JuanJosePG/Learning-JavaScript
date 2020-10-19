@@ -45,49 +45,48 @@ Repeat a given string for a number times. Expected results:
 - repeatStringNumTimes("abc", 0): ""
 
 8. **Truncate a String:**
-Expected results:
-- 
-- 
-- 
+Truncate a string if it's longer than the given maximum string length. Expected results:
+- truncateString("Peter Piper picked a peck of pickled peppers", 11): "Peter Piper..."
+- truncateString("A-", 1): "A..."
+- truncateString("Absolutely Longer", 2): "Ab..."
 
-9. **:**
-Expected results:
-- 
-- 
-- 
+9. **Finders Keepers:**
+Create a function that looks through an array and returns the first element in it that passes a 'truth test'. Expected results:
+- findElement([1, 3, 5, 8, 9, 10], function(num) { return num % 2 === 0; }): 8
+- findElement([1, 3, 5, 9], function(num) { return num % 2 === 0; }): undefined
 
-10. **:**
-Expected results:
-- 
-- 
-- 
+10. **Boo Who:**
+Check if a value is classified as a boolean primitive. Expected results:
+- booWho([1, 2, 3]): false
+- booWho(false): true
+- booWho(NaN): false
 
-11. **:**
-Expected results:
-- 
-- 
-- 
+11. **Title Case a Sentence:**
+Return the provided string with the first letter of each word capitalized. Expected results:
+- titleCase("I'm a little tea pot"): I'm A Little Tea Pot
+- titleCase("sHoRt AnD sToUt"): Short And Stout
+- titleCase("HERE IS MY HANDLE HERE IS MY SPOUT"): Here Is My Handle Here Is My Spout
 
-12. **:**
-Expected results:
-- 
-- 
-- 
+12. **Slice and Splice:**
+Copy each element of the first array into the second array, in order. Expected results:
+- frankenSplice([1, 2, 3], [4, 5], 1): [4, 1, 2, 3, 5]
+- frankenSplice([1, 2], ["a", "b"], 1): ["a", 1, 2, "b"]
+- frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2): ["head", "shoulders", "claw", "tentacle", "knees", "toes"]
 
-13. **:**
-Expected results:
-- 
-- 
-- 
+13. **Fancy Bouncer:**
+Remove all falsy values from an array. Expected results:
+- bouncer([7, "ate", "", false, 9]): [7, "ate", 9]
+- bouncer([false, null, 0, NaN, undefined, ""]): []
+- bouncer([null, NaN, 1, 2, undefined]): [1, 2]
 
-14. **:**
-Expected results:
-- 
-- 
-- 
+14. **Where do I belong:**
+Return the lowest index at which a value should be inserted into an array once it has been sorted. Expected results:
+- getIndexToIns([10, 20, 30, 40, 50], 35): 3
+- getIndexToIns([3, 10, 5], 3): 0
+- getIndexToIns([2, 20, 10], 19): 2
 
-15. **:**
-Expected results:
-- 
-- 
-- 
+15. **Mutations:**
+Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array. Expected results:
+- mutation(["hello", "Hello"]): true
+- mutation(["hello", "neo"]): false
+- mutation(["Noel", "Ole"]): true
